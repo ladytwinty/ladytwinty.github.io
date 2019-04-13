@@ -39,10 +39,18 @@
     <div class="loader-inner"></div>
 </div>
 
-<div class="popup-success">
-	<div class="popup-success-inner">
+<div class="popup popup-success">
+	<div class="popup-inner">
 		<img src="img/success.svg" alt="">
 		<p>Регистрация прошла успешно!!!</p>
+		<div class="common-btn">Ok</div>
+	</div>
+</div>
+
+<div class="popup popup-error">
+	<div class="popup-inner">
+		<img src="img/popup-error.svg" alt="">
+		<p>Упс. Что-то пошло не так =)</p>
 		<div class="common-btn">Ok</div>
 	</div>
 </div>
@@ -235,15 +243,15 @@
 
 
 							<div class="input-wrap">
-								<input class="email" id="user-email" name="user-email" type="email" >
+								<input class="email" id="user-email" name="user-email" type="email" required>
 								<label>Email</label>
 							</div>
 							<div class="input-wrap">
-								<input class="text" id="user-name" name="user-name" type="text" >
+								<input class="text" id="user-name" name="user-name" type="text" required>
 								<label>Имя</label>
 							</div>
 							<div class="input-wrap">
-								<input class="phone" id="user-phone" name="user-phone" type="text" >
+								<input class="phone" id="user-phone" name="user-phone" maxlength="10" type="text" pattern="0[0-9]{9}" title="0xxxxxxxxx">
 								<label>Телефон</label>
 							</div>
 							<div class="input-wrap">
@@ -272,19 +280,19 @@
 						<form action="" id="contact-business">
 
 							<div class="input-wrap">
-								<input class="email" id="business-email" name="business-email" type="email" >
+								<input class="email" id="business-email" name="business-email" type="email" required>
 								<label>Email</label>
 							</div>
 							<div class="input-wrap">
-								<input class="text" id="business-name" name="business-name" type="text" >
+								<input class="text" id="business-name" name="business-name" type="text" required>
 								<label>Имя</label>
 							</div>
 							<div class="input-wrap">
-								<input class="phone" id="business-phone" name="business-phone" type="text" >
+								<input class="phone" id="business-phone" name="business-phone" type="text" maxlength="10" type="text" pattern="0[0-9]{9}" title="0xxxxxxxxx">
 								<label>Телефон</label>
 							</div>
 							<div class="input-wrap">
-								<input class="restaurant-name" id="restaurant-name" name="restaurant-name" type="text" >
+								<input class="restaurant-name" id="restaurant-name" name="restaurant-name" type="text" required>
 								<label>Название ресторана</label>
 							</div>
 							<div class="input-wrap">
@@ -365,6 +373,7 @@
 
 	
 	<script src="js/scripts.min.js"></script>
+
 
 </body>
 </html>
